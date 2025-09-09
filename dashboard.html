@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: linear-gradient(to right,#fff,#fff638);
+    }
+    .welcome-box{
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 12px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        animation: fadein 1s ease-in-out;
+        max-width: 500px;
+    }
+    .welcome-box h1{
+        font-size: 2rem;
+        color: #fc6b00;
+        
+    }
+    .welcome-box p{
+        font-size: 1.1rem;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    .welcome-box a{
+        display: inline-block;
+        padding: 10px 12px;
+        background-color: #f4c542;
+        color: #000;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    .welcome-box a:hover{
+        background-color: #fc6b00;
+    }
+    @keyframes fadein{
+        from{opacity: 0; transform: translate(20px);}
+        to{opacity: 1;transform: translateY(0);}
+    }
+</style>
+<body>
+    <div class="welcome-box">
+        <h1>Welcome saga</h1>
+        <p>You have successfully logged in to your account,<br>Lets get started</p>
+        <a href="index.html">Go back home</a>
+    </div>
+</body>
+</html>

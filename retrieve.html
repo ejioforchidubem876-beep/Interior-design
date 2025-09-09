@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: linear-gradient(to right,#fff,#fff638);
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        display: flex;
+    }
+    .lost-page{
+        text-align: center;
+        padding: 40px;
+        box-shadow: 12px 8px 0px rgba(0,0,0,0.1);
+        animation: fadein 1s ease-in-out;
+        border-radius: 12px;
+        max-width: 500px;
+    }
+    .lost-page h2{
+        font-size: 2rem;
+        color: red;
+    }
+    .lost-page p{
+        color: #333;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .lost-page input[type="email"]{
+        width: 500px;
+        height: 40px;
+        border-radius: 10px;
+        transition: 0.4s ease;
+        cursor: pointer;
+        font-size: medium;
+    }
+    .lost-page input[type="email"]:hover{
+        background-color: #fff638;
+    }
+    .lost-page input[type="password"]{
+        font-size: medium;
+        width: 500px;
+        height: 40px;
+        border-radius: 10px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.4s ease;
+    }
+    .lost-page input[type="password"]:hover{
+        background-color: #fff638;
+    }
+    .lost-page button{
+        width: 100px;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 20px;
+        transition: 0.4s ease;
+        cursor: pointer;
+        font-size: medium;
+    }
+     .lost-page button:hover{
+        background-color: #333;
+     }
+     @keyframes fadein{
+        from{opacity: 0; transform: translate(20px);}
+        to{opacity: 1;transform: translateY(0);}
+     }
+    
+    
+
+    
+</style>
+<body>
+    <div class="lost-page">
+    <h2>Lost your account</h2>
+    <p>Dont worry we can help you retrieve your account in a sec</p>
+    <input type="email" placeholder="input your email or phone number">
+    <input type="password" placeholder="input your password">
+    <a href="dashboard.html"><button type="submit">Enter</button></a>
+    
+    </div>
+
+</body>
+</html>
